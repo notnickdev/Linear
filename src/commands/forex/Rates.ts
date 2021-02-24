@@ -35,19 +35,21 @@ export const run: Run = async (client, message, args) => {
                 {
                   name: "**Currency:**",
                   value: rate.currency,
+                  inline: true,
                 },
                 {
                   name: "**Rate:**",
                   value: rate.rate,
-                  inline: true,
                 },
                 {
                   name: "**Bid:**",
                   value: rate.bid,
+                  inline: true,
                 },
                 {
                   name: "**Ask:**",
                   value: rate.ask,
+                  inline: true,
                 },
                 {
                   name: "**Low:**",
