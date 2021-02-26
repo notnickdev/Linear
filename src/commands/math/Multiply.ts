@@ -11,9 +11,9 @@ export const run: Run = async (client, message, args) => {
     return;
   }
 
-  const sum: number = firstNumber + secondNumber;
+  const sum: number = firstNumber * secondNumber;
 
-  await message.channel.send(`✅ ${firstNumber} + ${secondNumber} = *${sum}*`);
+  await message.channel.send(`✅ ${firstNumber} X ${secondNumber} = *${sum}*`);
 };
 
-export const name: string = "add";
+export const name: string = "times";

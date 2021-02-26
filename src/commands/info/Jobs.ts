@@ -18,6 +18,7 @@ export const run: Run = async (client, message, args) => {
   const fetchRandomJobData = Math.floor(
     Math.random() * response.jobs.length + 1
   );
+  
   const job: any = response.jobs[fetchRandomJobData];
 
   await message.channel.send(

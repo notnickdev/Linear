@@ -4,7 +4,7 @@ import fetch from "node-fetch";
 
 export const run: Run = async (client, message, args) => {
   const baseCurrency: string = args[0];
-  const quoteCurrency: string = args[1];
+  const quoteCurrency: string = args[1]
 
   if (!baseCurrency || !quoteCurrency) {
     await message.channel.send(
@@ -78,7 +78,7 @@ export const run: Run = async (client, message, args) => {
           .setFooter(
             `${client.user?.username} | ${rate.currency} | Rates`,
             client.user?.displayAvatarURL()
-          )
+          ).setTimestamp()
       );
     }
   });

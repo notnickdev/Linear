@@ -5,6 +5,7 @@ import {
   Message,
   MessageEmbed,
   Collection,
+  Intents
 } from "discord.js";
 import glob from "glob";
 import { promisify } from "util";
